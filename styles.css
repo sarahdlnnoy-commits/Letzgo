@@ -1,9 +1,19 @@
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+/* Global reset: removes default margins, padding, and sets box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ============================================
+   PAGE LAYOUT
+   ============================================ */
+
+/* Main page container: centers content vertically and horizontally */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +24,11 @@ body {
     padding: 20px;
 }
 
+/* ============================================
+   CARDS CONTAINER
+   ============================================ */
+
+/* Container for pricing cards: horizontal flex layout */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +38,11 @@ body {
     align-items: flex-start;
 }
 
+/* ============================================
+   CARD COMPONENT
+   ============================================ */
+
+/* Individual pricing card: vertical flex layout */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +54,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Top section of card: contains title, price, and features */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan name heading */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +69,11 @@ body {
     margin-bottom: 8px;
 }
 
+/* ============================================
+   PRICING DISPLAY
+   ============================================ */
+
+/* Price container: aligns amount and period on baseline */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +81,42 @@ body {
     align-items: baseline;
 }
 
+/* Main price amount */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Price period (e.g., "/mo.") */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* ============================================
+   FEATURES SECTION
+   ============================================ */
+
+/* Features content wrapper */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* "Includes:" or "Everything in..." text */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Features list: removes default list styling */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Individual feature item: flex layout for checkmark alignment */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +125,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon styling */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +133,11 @@ body {
     font-weight: 400;
 }
 
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+/* Base button styles: secondary variant (light gray) */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +152,37 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Secondary button hover state */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Secondary button active state */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Primary button variant: dark background */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Primary button hover state */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Primary button active state */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* ============================================
+   PAGE LABEL
+   ============================================ */
+
+/* Fixed badge at top of page: identifies HTML version */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +196,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Bold text within page label */
 .page-label strong {
     color: #333;
 }
