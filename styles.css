@@ -178,6 +178,19 @@ body {
     background-color: #333;
 }
 
+.download-button.tertiary {
+    background-color: transparent;
+    border: 1px solid #e6e5e0;
+    color: #333;
+}
+
+.download-button.tertiary:hover {
+    background-color: #d9d9d9;
+}
+
+.download-button.tertiary:active {
+    background-color: transparent;
+}
 /* ============================================
    PAGE LABEL
    ============================================ */
