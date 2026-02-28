@@ -185,11 +185,11 @@ body {
 }
 
 .download-button.tertiary:hover {
-    background-color: #d9d9d9;
+    background-color: #DBDBD7;
 }
 
 .download-button.tertiary:active {
-    background-color: transparent;
+    background-color: #DBDBD7;
 }
 /* ============================================
    PAGE LABEL
